@@ -118,6 +118,7 @@ is_deeply([POSIX::stat($temp_file)], [stat $temp_file], 'stat');
     local $! = 2;
     my $error = "$!";
     is(POSIX::strerror(2), $error, 'strerror');
+    is($!+0, 2, 'previous $! value got restored');
 }
 
 is(POSIX::strstr('BBFRPRAFPGHPP', 'FP'), 7, 'strstr');
