@@ -104,6 +104,8 @@ my $tree = {
                                             [ 5.021, DEFAULT_ON ],
                                         'experimental::refaliasing' =>
                                             [ 5.021, DEFAULT_ON ],
+                                        'experimental::bitwise' =>
+                                            [ 5.021, DEFAULT_ON ],
                                 }],
 
                 'missing'       => [ 5.021, DEFAULT_OFF],
